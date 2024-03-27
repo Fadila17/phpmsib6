@@ -64,10 +64,90 @@ echo '<hr>';
 echo $nilai>6 ? "Baik" : "Buruk";
 
 echo '<hr>';
+
 $nilai = 7; // Ubah nilai sesuai kebutuhan
 $status_nilai = ($nilai > 6) ? "Baik" : "Buruk";
 echo "Nilai: $nilai<br>";
 echo "Status Nilai: $status_nilai";
+
+echo '<hr>';
+
+$baju='L'; // Ukuran baju
+switch ($baju) {
+    case 'l':
+    case 'L':
+        echo "Large";
+        break;
+    case 'M' && 'm':
+        echo "Medium";
+        break;
+    default:
+        echo "Small";
+        break;
+}
+
+/*
+$baju = 'm';
+$baju = strtolower($baju);
+switch ($baju) {
+    case "l":
+        echo "Large";
+        break;
+    case "m":
+        echo "Medium";
+        break;
+    default:
+        echo "Small";
+}
+*/
+
+echo '<hr>';
+
+$nilai='90';
+switch ($nilai){
+    case $nilai === 0:
+        echo "$nilai: Nilai Buruk";
+        break;
+    case $nilai <= 40:
+        echo "$nilai: Nilai Kurang";
+        break;
+    case $nilai <=70:
+        echo "$nilai: Nilai Cukup";
+        break;
+    case $nilai <=80:
+        echo "$nilai: Nilai Memuaskan";
+        break;
+    case $nilai <=100:
+        echo "$nilai: Nilai Sangat Memuaskan";
+        break;
+    default: 
+        echo "null";
+}
+
+echo '<hr>';
+
+$nilai2='88';
+switch ($nilai2) {
+    case $nilai2 >=0 && $nilai2 <35:
+        echo "$nilai2: E";
+        break;
+    case $nilai2 >=35 && $nilai2 <60:
+        echo "$nilai2: D";
+        break;
+    case $nilai2 >=60 && $nilai2 <75:
+        echo "$nilai2: C";
+        break;
+    case $nilai2 >=75 && $nilai2 <85:
+        echo "$nilai2: B";
+        break;
+    case $nilai2 >=85 && $nilai2 <100:
+        echo "$nilai2: A";
+        break;
+    default:
+        echo "null";
+}
+
+echo '<hr>';
 
 
 
