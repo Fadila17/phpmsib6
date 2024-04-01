@@ -17,7 +17,6 @@ $harga_tertinggi = max($jumlah_harga);
 $harga_terendah = min($jumlah_harga);
 $jumlah_transaksi = count($ar_buah);
 $harga_rata2 = $harga_total / $jumlah_transaksi;
-$nilaitengah= 
 
 $keterangan = [
     'Harga Total' =>$harga_total,
