@@ -5,7 +5,7 @@ class Siswa{
     public $nilai;
     public $pelajaran;
 
-    // member 2 (methon) - constructor
+    // member 2 (method) - constructor
     public function __construct($nama, $nilai, $pelajaran)
     {
         $this->nama = $nama;
